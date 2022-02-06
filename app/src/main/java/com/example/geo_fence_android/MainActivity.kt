@@ -98,7 +98,6 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
-
     private fun fetchLocationAndUpdate() {
         if (!Roam.checkLocationServices()) {
             Roam.requestLocationServices(this)
