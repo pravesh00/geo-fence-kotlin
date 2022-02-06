@@ -2,10 +2,8 @@ package com.example.geo_fence_android
 
 import com.example.geo_fence_android.model.LocationInfo
 import com.google.gson.GsonBuilder
-import com.google.gson.JsonArray
 import okhttp3.ResponseBody
 import retrofit2.Call
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory

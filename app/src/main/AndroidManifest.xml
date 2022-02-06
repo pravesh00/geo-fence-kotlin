@@ -15,8 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Geofence_android">
+        <receiver android:name=".LocationReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.roam.android.RECEIVED"/>
+            </intent-filter>
+        </receiver>
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.example.geo_fence_android.SettingsActivity"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -34,7 +41,7 @@
             android:value="AIzaSyCUKRvnJdH-yJ7Fp174e60YckMzVohd_SQ" />
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.geo_fence_android.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
